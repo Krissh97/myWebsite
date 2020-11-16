@@ -1,0 +1,27 @@
+div,p{
+    margin-top: 10px;
+}
+
+img{
+    border-radius: 50%;
+    height:200px;
+    width:200px;
+    margin-top: 60px;
+}
+h3{
+    margin-top: 15px;
+}
+p{
+    text-align:justify;
+    align-items: center;
+    justify-content: center;
+}
+.bor{
+    border-width: 1px;
+    border-style: solid;
+   
+}
+.opacity30 {
+    opacity: 0.9;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
+  }

@@ -1,0 +1,146 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark" [containerInside]="false">
+  
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand" routerLink="/home">Home</a></mdb-navbar-brand>
+
+    <!-- Collapsible content -->
+    <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a routerLink="/experience" class="nav-link waves-light" mdbWavesEffect>Experience<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            Basic dropdown<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+            <div class="divider dropdown-divider"></div>
+            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+          </div>
+        </li>
+
+      </ul>
+      <!-- Links -->
+
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          
+          <a class="nav-link">
+            <i class="fab fa-google"></i>
+          </a>
+        </li>
+        
+        <li class="nav-item dropdown" mdbDropdown> 
+        <!-- <div class=" " > -->
+
+          <a mdbDropdownToggle class="nav-link dropdown-toggle waves-light"
+            mdbWavesEffect>
+            <i class="far fa-user"></i>
+          </a>
+        
+          <div class="dropdown-menu">
+            <button class="dropdown-item" href="#">Action</button>
+            <button class="dropdown-item" href="#">Another action</button>
+           
+          </div>
+        <!-- </div> -->
+        </li>
+      </ul>
+    </links>
+    <!-- Collapsible content -->
+
+  </mdb-navbar>
+  <div class="container">
+      <div  class="row">
+        <div style="margin-top:40px" class="col">
+            <mdb-carousel [animation]="'slide'">
+                <mdb-carousel-item>
+                  <img class="d-block w-100" src="./assets/a1.jpg" alt="First slide">
+                </mdb-carousel-item>
+                <mdb-carousel-item>
+                  <img class="d-block w-100" src="./assets/a2.jpg" alt="Second slide">
+                </mdb-carousel-item>
+                <mdb-carousel-item>
+                  <img class="d-block w-100" src="./assets/a3.jpg" alt="Third slide">
+                </mdb-carousel-item>
+                <mdb-carousel-item>
+                    <img class="d-block w-100" src="./assets/a4.jpg" alt="Forth slide">
+                  </mdb-carousel-item>
+                  <mdb-carousel-item>
+                    <img class="d-block w-100" src="./assets/a5.jpg" alt="Fifth slide">
+                  </mdb-carousel-item>
+                  <mdb-carousel-item>
+                    <img class="d-block w-100" src="./assets/a6.jpg" alt="Sixth slide">
+                  </mdb-carousel-item>
+              </mdb-carousel>
+        </div>
+        <div style="margin-top:40px"class="col-7">
+            <p>
+                <strong>Software Developer Intern at Amazon</strong>   
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+                <i>Boston, MA</i>   
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+                <i> Jun ’19 - Aug ’19</i> <br>
+                ◦ Interned at Amazon with <b>AWS DMS (Database Migration Service)</b> team, where
+                 I’ve developed a connector which enabled the support for Migration of data to MSK
+                  which is an Apache Kafka service that is managed by AWS. <br>
+                ◦ Wrote the code for control plane changes in JAVA to create a Kafka 
+                endpoint with deﬁned settings and connect to it via AWS DMS console. <br>
+                ◦ For the data plane changes, I’ve searched for a dependable open source library to 
+                communicate with Kafka in C language and reused the code to unload data from various 
+                databases which was already in place and wrote the code to convert the data into JSON 
+                format and added the required metadata and then push the data to a speciﬁed Kafka topic. <br>
+                ◦ Tested code by creating data in various databases and sent the data to an Apache kafka 
+                and then tested it with MSK by overcoming security issues. <br>
+                ◦ Wrote the code for data to be sent either in Full-load mode where all the pre-existing 
+                data is pushed and connection ends or in CDC mode which captures any changes on source database in real time and keeps pushing
+                 data until the connection is closed.<br>
+                ◦ Tools : JAVA, C, Apache kafka, MSK, Kinesis, Dynamo DB, Oracle, MySQL, VPC, EC2, RDS, Unit testing, debugging using gdb, TablePlus, Amazon Corretto, S3
+
+            </p>
+        </div>
+      </div>
+      <hr class="rounded">
+      <div class="row">
+        <div style="margin-top:40px;margin-bottom:40px" class="col">
+          <mdb-carousel [animation]="'slide'">
+            <mdb-carousel-item>
+              <img class="d-block w-100" src="./assets/q1.png" alt="First slide">
+            </mdb-carousel-item>
+            
+            
+          </mdb-carousel>
+        </div>
+        <div style="margin-top:40px;margin-bottom:40px"class="col-7">
+            <p>
+              <strong>Junior Java Developer</strong>   
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+                <i>Little Elm, TX</i>   
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+                <i> Sept ’20 - Present</i> <br><br>
+              ◦ Working as a full stack Java developer.<br>
+              ◦ Responsible for building REST API endpoints using Spring Boot, Hibernate. <br>
+              ◦ Built components for a few pages using Angular and Bootstrap.<br>
+            </p>
+        </div>
+      </div>
+  </div>

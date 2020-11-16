@@ -1,0 +1,101 @@
+<div class="container">
+    <div class="row">
+      <div class="col-3">
+        <img src="assets/kc1.jpg">
+        <h3>Krishna chaitanya Uppala</h3>
+        <h6 style="margin-top: 20px;">Junior Java Developer</h6>
+        <h6>Quiddity Infotech</h6>
+      </div>
+      <div class="col-9">
+        <!--Navbar-->
+        <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark" [containerInside]="false">
+  
+          <!-- Navbar brand -->
+          <mdb-navbar-brand><a class="navbar-brand" routerLink="/home">Home</a></mdb-navbar-brand>
+  
+          <!-- Collapsible content -->
+          <links>
+  
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a routerLink="/experience" class="nav-link waves-light" mdbWavesEffect>Experience<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect>Academic projects</a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/myself" class="nav-link waves-light" mdbWavesEffect>About</a>
+              </li>
+  
+              <!-- Dropdown -->
+              <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                  Basic dropdown<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+                  <div class="divider dropdown-divider"></div>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+                </div>
+              </li>
+  
+            </ul>
+            <!-- Links -->
+  
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+              
+              <li class="nav-item">
+                
+                <a class="nav-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                
+                <a class="nav-link">
+                  <i class="fab fa-google"></i>
+                </a>
+              </li>
+              
+              <li class="nav-item dropdown" mdbDropdown> 
+              <!-- <div class=" " > -->
+  
+                <a mdbDropdownToggle class="nav-link dropdown-toggle waves-light"
+                  mdbWavesEffect>
+                  <i class="far fa-user"></i>
+                </a>
+              
+                <div class="dropdown-menu">
+                  <button class="dropdown-item" href="#">Action</button>
+                  <button class="dropdown-item" href="#">Another action</button>
+                 
+                </div>
+              <!-- </div> -->
+              </li>
+            </ul>
+          </links>
+          <!-- Collapsible content -->
+  
+        </mdb-navbar>
+        <br><br><br>
+          <p style="padding: 2px;margin-bottom: 8px;">I'm a graduate student from University of Florida with a Master's degree in CISE 
+            (Computer and Information Sciences and Engineering).<br>
+            I have been inclined towards the field of Computer Science since childhood as it fascinates me.
+            I was in awe about the way it has transformed our lives, connecting the whole world 
+            into a cyber village, helping us tackle problems of humungous proportions and the 
+            rapidity with which it has pushed and keeps pushing the frontier of the problems 
+            that we as humans have attempted to solve. 
+            With a strong interest in this subject, I had chosen to pursue an undergraduate 
+            program in the same field. <br>
+            I was born and raised in India and that is where I completed my studies until I got an opportunity
+            to pursue my Master's in University of Florida.<br>
+            During this time I had the life-changing opportunity of Interning at Amazon in 2019.<br>
+            Currently I'm working as a Junior Java Developer at Quiddity where I've been exploring and working 
+            on new technologies.
+          </p>
+      </div>
+     
+    </div>
+  </div>
