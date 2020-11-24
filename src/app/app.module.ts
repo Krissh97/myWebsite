@@ -20,6 +20,9 @@ const routes : Routes = [
     path : 'myself', component : MypicturesComponent
   },
   {
+    path : 'projects', component : ProjectsComponent
+  },
+  {
     path : '', redirectTo : '/home', pathMatch : 'full'
   }
 
